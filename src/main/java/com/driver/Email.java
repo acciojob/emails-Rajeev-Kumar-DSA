@@ -29,12 +29,12 @@ public class Email {
         if(oldPassword.equals(newPassword)){
             if (checkingValidPasswordOrNot(newPassword)){
                 this.password = newPassword;  // update the password with newPassword
-                System.out.println("Password has been updated");
+//                System.out.println("Password has been updated");
             }else {
-                System.out.println("provided new password is not matched the rule.....");
+//                System.out.println("provided new password is not matched the rule.....");
             }
         }else{
-            System.out.println("given password not matched with oldPassword");
+//            System.out.println("given password not matched with oldPassword");
         }
     }
 
