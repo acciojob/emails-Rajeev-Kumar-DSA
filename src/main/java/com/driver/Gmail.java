@@ -25,7 +25,7 @@ public class Gmail extends Email {
         // 2. The mails are received in non-decreasing order. This means that the date of a new mail is greater than equal to the dates of mails received already.
 
         // when my Inbox will be full
-        if(Inbox.size() == inboxCapacity){
+        if(Inbox.size() >= inboxCapacity){
             // here I have to oldest mail in trast list
             // oldest means remove from 0th index mail, before removing the list I have to keep the mail data
             MessageRecord oldMessage = Inbox.get(0);
